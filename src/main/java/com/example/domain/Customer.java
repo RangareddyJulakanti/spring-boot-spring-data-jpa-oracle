@@ -2,7 +2,9 @@ package com.example.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
-
+/**
+ * Created by RANGA on 3/26/2017.
+ */
 @Entity
 @Table(name = "customer")
 public class Customer implements Serializable {

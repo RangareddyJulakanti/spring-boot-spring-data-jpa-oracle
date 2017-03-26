@@ -5,7 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
+/**
+ * Created by RANGA on 3/26/2017.
+ */
 @RestController
 public class WebController {
 	@Autowired
@@ -13,11 +15,11 @@ public class WebController {
 	
 	@RequestMapping("/save")
 	public String process(){
-		repository.save(new Customer("Jack", "Smith"));
-		repository.save(new Customer("Adam", "Johnson"));
-		repository.save(new Customer("Kim", "Smith"));
-		repository.save(new Customer("David", "Williams"));
-		repository.save(new Customer("Peter", "Davis"));
+		repository.save(new Customer("Raj", "Kiran"));
+		repository.save(new Customer("Raja", "Mohan"));
+		repository.save(new Customer("Hari", "Krishna"));
+		repository.save(new Customer("Mohana", "Ranga"));
+		repository.save(new Customer("Kiran", "Kumar"));
 		return "Done";
 	}
 	
