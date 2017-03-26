@@ -28,7 +28,7 @@ public class DemoApplicationTests {
 	}
 
 	@Test
-	@Transactional
+	@Transactional//Automatically rollback once transaction will complete.
 	public void testCustomer()
 	{   Customer customer=new Customer("raja","reddy");
 		customerRepository.save(customer);
